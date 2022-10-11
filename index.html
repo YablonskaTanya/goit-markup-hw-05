@@ -61,7 +61,7 @@
       <!-- Герой -->
       <section class="hero overlay">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="button" type="button">Замовити послугу</button>
+        <button class="button" type="button" data-modal-open>Замовити послугу</button>
       </section>
 
       <!-- Наші особливості -->
@@ -129,12 +129,15 @@
           <ul class="list work-list">
             <li class="work-card">
               <img class="card-image" src="./images/box1.jpg" alt="компьютер" width="370" />
+              <p class="work-text">Десктопні додатки</p>
             </li>
             <li class="work-card">
               <img class="card-image" src="./images/box2.jpg" alt="ноутбук" width="370" />
+              <p class="work-text">Мобільні додатки</p>
             </li>
             <li class="work-card">
               <img class="card-image" src="./images/box3.jpg" alt="планшет" width="370" />
+              <p class="work-text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -430,5 +433,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button-modal" type="button" data-modal-close></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
